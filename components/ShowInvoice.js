@@ -108,13 +108,13 @@ export const ShowInvoice = ({ data, newInvoice, setNewInvoice }) => {
                         <div tw="flex flex-row w-8 h-8 bg-white rounded-full ml-2 mr-2 items-center justify-center">
                             <Image src="/assets/icon-plus.svg" width={10} height={10} alt="plusIcon" />
                         </div>
-                        <button onClick={() => setNewInvoice(!newInvoice)}>New</button>
+                        <button onClick={() => setNewInvoice(prev => !prev)}>New</button>
                     </div>
                     <div tw="font-sans font-bold text-white text-sm flex flex-row hidden tablet:flex bg-[#7C5DFA] w-[150px] h-[44px] rounded-full items-center">
                         <div tw="flex flex-row w-8 h-8 bg-white rounded-full ml-2 mr-4 items-center justify-center">
                             <Image src="/assets/icon-plus.svg" width={10} height={10} alt="plusIcon" />
                         </div>
-                        <button onClick={() => setNewInvoice(!newInvoice)}>New Invoice</button>
+                        <button onClick={() => setNewInvoice(prev => !prev)}>New Invoice</button>
                     </div>
                 </div>
             </div>

@@ -172,7 +172,7 @@ export const NewInvoice = ({ newInvoice, setNewInvoice }) => {
         postData(form);
 
         setFormData(initialState);
-
+        setNewInvoice(false);
     };
 
     async function handleSubmitSend(data) {
@@ -205,7 +205,7 @@ export const NewInvoice = ({ newInvoice, setNewInvoice }) => {
 
         postData(form);
         setFormData(initialState);
-
+        setNewInvoice(false);
     };
 
     const Dropdown = () => {
